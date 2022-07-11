@@ -1,0 +1,49 @@
+body{
+
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+footer{
+
+	margin-top: auto;
+	background-color: #001B34;
+}
+.a{
+
+	font-weight: bold;
+	font-family: arial;
+	color: white;
+	transition: 0.3s;
+
+}
+
+.a:hover{
+
+	color: #eec20a;
+}
+.Desing{
+
+	color:white; text-decoration: none;
+
+}
+.Libro{
+
+	background-color: #eec20a;
+	border-color: #eec20a;
+  	font-weight: bold;
+	font-family: arial;
+	color: white;
+	transition: 0.3s;
+}
+
+.Libro:hover{
+
+	background-color: rgb(2, 48, 82);
+	border-color: #eec20a;
+	font-weight: bold;
+	font-family: arial;
+	color: #eec20a;
+
+}

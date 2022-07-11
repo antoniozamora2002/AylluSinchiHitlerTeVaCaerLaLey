@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link th:href="@{/css/estilos.css}" rel="stylesheet" />
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container-fluid" layout:fragment="page-content">            
+            <nav class="navbar navbar-light bg-light m-2">
+                <h4 class="ps-3"><i class="fa-solid fa-gauge me-2"></i>Usuario</h4>
+            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Taller 1</h5>
+                                <a th:href="@{/menu/persona}" class="btn btn-warning align-items-center">
+                                    <strong class="me-2">Asistencia</strong><i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Taller 2</h5>
+                                <a th:href="@{/menu/persona}" class="btn btn-warning align-items-center">
+                                    <strong class="me-2">Asistencia</strong><i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Taller 3</h5>
+                                <a th:href="@{/menu/taller}" class="btn btn-warning align-items-center">
+                                    <strong class="me-2">Asistencia</strong><i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--<!-- comment -->
+            </div>
+        </div><br><br><br>
+         <footer class="text-white text-center" style="margin-top: auto;">
+  <!-- Grid container -->
+
+  <div class="d-flex justify-content-around">
+
+    <div class="p-2" style="text-align: center;">
+
+      <h5 class="a"><u>SOBRE LA UpeU</u></h5>
+
+      <div><a href="https://upeu.edu.pe/mision-y-vision/" style="color:white; text-decoration: none; font-weight: bold;">Misión y Visión</a></div><br>
+      <div><a href="https://upeu.edu.pe/normatividad-institucional/" style="color:white; text-decoration: none; font-weight: bold;">Normatividad Institucional</a></div><br>
+      <div><a href="https://upeu.edu.pe/transparencia/" style="color:white; text-decoration: none; font-weight: bold;">Transparencia</a></div><br>
+      <div><a href="https://upeu.edu.pe/plan-estrategico/" style="color:white; text-decoration: none; font-weight: bold;">Plan Estratégico</a></div><br>
+      <div><a href="https://upeu.edu.pe/protocolos-covid-19/" style="color:white; text-decoration: none; font-weight: bold;">Protocolos Covid-19</a></div><br>
+
+    </div>
+    <div class="p-2" style="text-align: center;">
+
+      <h5 class="a"><u>FACULTADES</u></h5>
+
+      <div><a href="https://upeu.edu.pe/fce/" target="_blank" style="color:white; text-decoration: none; font-weight: bold;">Ciencias Empresariales</a></div><br>
+      <div><a href="https://upeu.edu.pe/facihed/" target="_blank" style="color:white; text-decoration: none; font-weight: bold;">Ciencias Humanas y Educación</a></div><br>
+      <div><a href="https://upeu.edu.pe/fsalud/" target="_blank" style="color:white; text-decoration: none; font-weight: bold;">Ciencias de la Salud</a></div><br>
+      <div><a href="https://upeu.edu.pe/fia/" target="_blank" style="color:white; text-decoration: none; font-weight: bold;">Ingeniería y Arquitectura</a></div><br>
+      <div><a href="https://upeu.edu.pe/teologia/" target="_blank" style="color:white; text-decoration: none; font-weight: bold;">Teologia</a></div><br>
+
+    </div>
+    <div class="p-2" style="text-align: center;">
+
+      <h5 class="a"><u>CONTACTO</u></h5>
+
+      <div><h5 style="color:white; text-decoration: none; font-weight: bold;">Campus Lima</h5><a style="color:gray;">+51 1-6186300</a></div>
+      <div><h5 style="color:white; text-decoration: none; font-weight: bold;">Campus Juliaca</h5><a style="color:gray;">+51 1-6186302</a></div>
+      <div><h5 style="color:white; text-decoration: none; font-weight: bold;">Campus Tarapoto</h5><a style="color:gray;">+51 1-6186303</a></div>
+      <div><h5 style="color:white; text-decoration: none; font-weight: bold;">Correo Admisión</h5><a style="color:gray;">informes@upeu.edu.pe</a></div>
+
+      <div >
+        <a href="https://librodereclamaciones.upeu.edu.pe/"><button class="Libro">LIBRO DE RECLAMACIONES</button></a>
+      </div>
+
+    </div>
+  </div>
+  
+
+  <div>
+    <img src="https://upeu.edu.pe/wp-content/uploads/2022/03/03.png" style=" height:136px; width: 242px;">
+  </div>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #003366; width: 100%;">
+    <a style="float: left;">Copyright © UPeU 2022. Todos los derechos son reservados — Implementado por:</a>
+    <a href="https://upeu.edu.pe/" style="text-decoration: none; color: #eec20a; float: left;">UpeU</a>
+    <a href="https://web.facebook.com/UPeUOficial/"><img src="https://dolarpagano.com/img/Facebook.svg" style="height: 44px; width:44px"></a>
+    <a href="https://www.instagram.com/upeuoficial/"><img src="https://i.pinimg.com/originals/ca/51/6a/ca516ad32cd14832b56f26641a2a3ed6.png" style="height: 44px; width:44px"></a>
+    <a href="https://twitter.com/UPeUOficial"><img src="https://raw.githubusercontent.com/gist/hail2u/2884613/raw/0216962914635ef6e8e5389dd57a0e06f209fd72/twitter-bird.svg" style="height: 33px; width:33px"></a>
+    <a href="https://www.youtube.com/user/UPeruanaUnion"><img src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-6-2.png" style="height: 33px; width:33x"></a>
+
+  </div>
+      
+  <!-- Copyright -->
+  
+</footer>
+    </body>
+</html>
