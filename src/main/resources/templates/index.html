@@ -8,8 +8,223 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>Proyecto Ayllu Sinchi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="assets/icono-upeu.ico" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link th:href="@{/css/estilosIndex.css}" rel="stylesheet" />
     </head>
     <body>
-        <div>TODO write content</div>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="https://s3.amazonaws.com/files.patmos.upeu.edu.pe/statics/app-assets/images/logo-upeu-blanco.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Talleres</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">TEAM</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/login}">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading ">Welcome</div>
+                        <div class="masthead-heading text-uppercase">PLANWEB<br>Ayllu Sinchi</div>
+            </div>
+        </header>
+        <!-- Talleres original-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Talleres</h2>
+                    <h3 class="section-subheading text-muted">Talleres destinados a la comunidad de Quinta Elena.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Taller 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://www.escueladeriqueza.org/wp-content/uploads/finanzas-en-el-hogar.jpg" alt="Finanzas" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Finanzas<br><br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                       
+                    <!-- Taller 2-->
+                    <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://services.meteored.com/img/article/a-plantacao-de-arvores-vai-aumentar-a-pluviosidade-em-toda-a-europa-alteracoes-climaticas-349741-1_1024.jpg" alt="Plantacion" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Plantación<br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Taller 3-->
+                    <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://crehana-blog.imgix.net/media/filer_public/08/8d/088d68d7-e526-48a6-a55e-4f8466149754/libros-de-reposteria.jpg" alt="reposteria" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Reposteria<br><br></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <!-- Presentación del equipo-->
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Nuestro Equipo</h2>
+                    <h3 class="section-subheading text-muted">Información sobre nosotros, Los runtusapas</h3>
+                </div>
+                <div class="row">
+                    <!-- Integrante 1-->
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://i.postimg.cc/Vv9mmFSP/z.jpg" alt="..." />
+                            <h4>Antonio Zamora Pastor</h4>
+                            <a class="btn btn-dark btn-social mx-2" target="_BLANCK" href="https://www.facebook.com/antonio.zamorapastor/" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" target="_BLANCK" href="https://www.instagram.com/zamora02_/" aria-label="Parveen Anand Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <!-- Integrante 2-->
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://i.postimg.cc/wBNrCjyS/45568fd7-3264-4244-a853-e52c58048418.jpg" alt="..." />
+                            <h4>Marco Alejandro Rios Cuadros</h4>
+                            <a class="btn btn-dark btn-social mx-2" target="_BLANCK" href="https://www.facebook.com/rubi.rengifosinarahua" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" target="_BLANCK" href="https://www.instagram.com/rubi_rengifo1/" aria-label="Diana Petersen LinkedIn Profile"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <!-- Integrante 3-->
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://i.postimg.cc/TYCv01g0/f33b792f-ffac-4cb3-8941-9f5a89c6066c.jpg" alt="..." />
+                            <h4>Boris Jean Pierre Gonzales Rivera</h4>                            
+                            <a class="btn btn-dark btn-social mx-2" target="_BLANCK" href="https://www.facebook.com/zambranogaa.panduro" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" target="_BLANCK" href="https://www.instagram.com/zambranogamer_uwu/" aria-label="Larry Parker LinkedIn Profile"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <!-- Integrante 4-->
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/288633966_5165199906905479_7755789803276362394_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHEv7k9xbF5kPATFYCtxjgTbhciVgnq0e1uFyJWCerR7RTFEBBz7WfcWw26KUJMtwUZBS2vTHsUBVlGU7iYZ4H2&_nc_ohc=Do1jVcfa-K0AX8H7ekI&_nc_ht=scontent-lim1-1.xx&oh=00_AT-b-qOYMAb9Get5qFULqU0cBd_qDA2fwrxXflI8QbRauQ&oe=62D0DDE2" alt="blob:https://web.whatsapp.com/b1472440-cb6e-43ff-8ef6-1d6ad92d97de" />
+                            <h4>Alejandro Macedo Mamani</h4>
+                            <a class="btn btn-dark btn-social mx-2" target="_BLANCK" href="https://www.facebook.com/jmartindelap/" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" target="_BLANCK" href="https://www.instagram.com/dapcito/" aria-label="Larry Parker LinkedIn Profile"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>      
+                </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Runtusapas - PLANWEB 2022</div>
+                    <div class="col-lg-4 my-3 my-lg-1">
+                        <a class="btn btn-dark btn-social mx-2" target="_BLANCK" href="https://www.instagram.com/braxly.ayllu_sinchi/" aria-label="Twitter"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Modal a mostrar al dar click a los talleres-->xs
+        <!-- Taller 1 modal-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">La Autoestima</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/talleres/autoestima.jpg" alt="..." />
+                                    <p>La autoestima significa que mayormente uno se siente bien consigo mismo. Los niños con una buena autoestima: se sienten orgullosos de lo que son capaces de hacer. ven las cosas positivas sobre sí mismos.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Taller 2 modal-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">La Importancia de reciclar</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/talleres/medioambiente.jpg" alt="..." />
+                                    <p>El cuidado del medio ambiente representa a todas aquellas conductas que los seres vivos deben tomar en pro a la salud de la naturaleza. La finalidad es hacerlo un medio con más oportunidades y más provechos que satisfacen la vida de todas las generaciones.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Taller 3 modal-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">El estres</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/talleres/estres.jpg" alt="..." />
+                                    <p>El estrés es un sentimiento de tensión física o emocional. Puede provenir de cualquier situación o pensamiento que lo haga sentir a uno frustrado, furioso o nervioso. El estrés es la reacción de su cuerpo a un desafío o demanda.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

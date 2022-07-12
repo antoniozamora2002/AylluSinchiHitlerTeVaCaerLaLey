@@ -41,20 +41,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
   <form style="width: 470px; margin: auto; padding: 45px;">
   <!-- Email input -->
   <div class="form-outline mb-4">
-    <input type="text" name="usuario" id="usuario" class="form-control" />
+    <input class="form-control" id="txtUsuario" type="text"/>
     <label class="form-label" for="form2Example1">Nombres de usuario </label>
   </div>
 
   <!-- Password input -->
   <div class="form-outline mb-4">
-    <input type="password" name="password" id="contraseña" class="form-control" />
+      <input class="form-control" id="txtPassword" type="password"/>
     <label class="form-label" for="form2Example2">Contraseña</label>
   </div>
 
 
 
-  <!-- Submit button -->
-  <button type="submit" class="btn btn-primary btn-block mb-4" style="padding: 12px; width: 100%; background-color: #003366; color:#ffffff;" onclick="Login()">Ingresar</button>
+  
+  <div class="d-flex align-items-center justify-content-center mt-4">
+      <a class="btn btn-primary" onclick="VerificarUsuario()">Iniciar sesión</a>
+  </div>
 
 </form>
 
