@@ -5,21 +5,21 @@
 package upeu.ayllusinchi.service;
 
 import java.util.List;
-import upeu.ayllusinchi.entity.Usuario;
+import upeu.ayllusinchi.entity.Asistencia;
 
 /**
  *
  * @author ethamzamora
  */
-public interface UsuarioService {
+public interface AsistenciaService {
     
-    public List<Usuario> findAll();
+    public List<Asistencia> findAll();
 
-    public Usuario findById(Long id);
+    public Asistencia findById(Long id);
 
-    public Usuario save(Usuario usuario);
+    public Asistencia save(Asistencia asistencia);
 
-    public void delete(Usuario usuario);
+    public void delete(Asistencia asistencia);
 
     public void deleteById(Long id);
     
